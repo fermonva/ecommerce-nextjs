@@ -1,8 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#Ecommerce Next.js App with TailwindCSS
 
-## Getting Started
+```
+   git clone https://github.com/fermonva/xxx
+   cd xxx
+```
 
-First, run the development server:
+## Install Dependencies
+```
+    npm install || pnpm install
+```
+
+## Run Server
 
 ```bash
 npm run dev
@@ -16,21 +24,74 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js
+- Tailwind CSS
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+app
+ ┣ blog
+ ┃ ┣ page.tsx
+ ┃ ┗ styles.module.css
+ ┣ cart
+ ┃ ┣ page.tsx
+ ┃ ┗ styles.module.css
+ ┣ nosotros
+ ┃ ┣ page.tsx
+ ┃ ┗ styles.module.css
+ ┣ post
+ ┃ ┗ [url]
+ ┃ ┃ ┣ page.tsx
+ ┃ ┃ ┗ styles.module.css
+ ┣ product
+ ┃ ┗ [url]
+ ┃ ┃ ┣ page.tsx
+ ┃ ┃ ┗ styles.module.css
+ ┣ tienda
+ ┃ ┣ page.tsx
+ ┃ ┗ styles.module.css
+ ┣ favicon.ico
+ ┣ globals.css
+ ┣ layout.tsx
+ ┣ not-found.tsx
+ ┣ page.tsx
+ ┗ styles.module.css
+ components
+ ┣ card
+ ┃ ┣ Card.tsx
+ ┃ ┗ styles.module.css
+ ┣ course
+ ┃ ┣ CourseItem.tsx
+ ┃ ┗ styles.module.css
+ ┣ footer
+ ┃ ┣ Footer.tsx
+ ┃ ┗ styles.module.css
+ ┣ header
+ ┃ ┣ Header.tsx
+ ┃ ┗ styles.module.css
+ ┣ post
+ ┃ ┣ Post.tsx
+ ┃ ┗ styles.module.css
+ ┣ shopping-cart
+ ┃ ┣ ShoppingCart.tsx
+ ┃ ┗ styles.module.css
+ ┗ index.ts
+ redux
+ ┣ features
+ ┃ ┗ cartSlice.ts
+ ┣ middleware
+ ┃ ┗ localstorage-middleware.ts
+ ┣ hooks.ts
+ ┣ provider.tsx
+ ┗ store.ts
+ types
+ ┗ index.ts
+ utils
+ ┣ helpers.ts
+ ┗ index.ts
+ ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ <image src="./public/img/guitar.jpeg" alt="Descripción de la imagen">
