@@ -1,8 +1,8 @@
 #Ecommerce Next.js App with TailwindCSS
 
 ```
-   git clone https://github.com/fermonva/xxx
-   cd xxx
+   git clone https://github.com/fermonva/ecommerce-nextjs.git
+   cd ecommerce-nextjs
 ```
 
 ## Install Dependencies
