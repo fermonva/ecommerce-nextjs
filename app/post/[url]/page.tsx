@@ -2,7 +2,7 @@ import { getPost } from "@/utils";
 import { formatearFecha } from "@/utils/helpers";
 import Image from "next/image";
 
-import { type Posts } from "@/types";
+import type { Posts } from "@/types";
 
 import styles from "./styles.module.css";
 

@@ -1,6 +1,6 @@
 "use client";
-import { type Course } from "@/types";
-import { type FC } from "react";
+import type { Course } from "@/types";
+import type { FC } from "react";
 
 import styles from "./styles.module.css";
 

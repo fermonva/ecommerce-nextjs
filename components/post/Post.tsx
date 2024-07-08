@@ -1,8 +1,8 @@
-import { type FC } from "react";
-import { type Posts } from "@/types";
+import type { Posts } from "@/types";
+import { formatearFecha } from "@/utils/helpers";
 import Image from "next/image";
 import Link from "next/link";
-import { formatearFecha } from "@/utils/helpers";
+import type { FC } from "react";
 
 import styles from "./styles.module.css";
 

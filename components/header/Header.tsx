@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { type FC } from "react";
+import type { FC } from "react";
 
 import { useAppSelector } from "@/redux/hooks";
 import styles from "./styles.module.css";

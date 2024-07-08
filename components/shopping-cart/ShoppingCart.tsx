@@ -1,11 +1,12 @@
 "use client";
 import { formatearPrecio } from "@/utils/helpers";
 import Image from "next/image";
-import React, { useState, type FC } from "react";
+import type React from "react";
+import { type FC, useState } from "react";
 
 import { agregarCarrito } from "@/redux/features/cartSlice";
 import { useAppDispatch } from "@/redux/hooks";
-import { type Cart, type Product } from "@/types";
+import type { Cart, Product } from "@/types";
 import styles from "./styles.module.css";
 
 export const ShoppingCart: FC<Product> = ({

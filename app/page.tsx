@@ -1,7 +1,7 @@
 "use client";
 import { Card, CourseItem, Post } from "@/components";
 
-import { type Course, type Posts, type Product } from "@/types";
+import type { Course, Posts, Product } from "@/types";
 import { getCurse, getPosts, getProducts } from "@/utils";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";

@@ -1,5 +1,5 @@
-import { type Cart } from "@/types";
-import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import type { Cart } from "@/types";
+import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 const initialState: Cart[] = (() => {
   if (typeof localStorage === "undefined") return [];

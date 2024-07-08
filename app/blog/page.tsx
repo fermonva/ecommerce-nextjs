@@ -1,13 +1,13 @@
 import { Post } from "@/components";
-import { type Posts } from "@/types";
+import type { Posts } from "@/types";
 import { getPosts } from "@/utils";
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 
 import styles from "./styles.module.css";
 
 export const metadata: Metadata = {
   title: "GuitarLA - Tienda Virtual",
-  description: "Blog de musica, venta de guitarras, instrumentos",
+  description: "Blog de música, venta de guitarras, instrumentos",
 };
 
 export default async function Page(): Promise<JSX.Element> {

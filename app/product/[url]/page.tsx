@@ -1,7 +1,7 @@
 import { getProduct } from "@/utils";
 
 import { ShoppingCart } from "@/components";
-import { type Product } from "@/types";
+import type { Product } from "@/types";
 
 export default async function Page({
   params,
@@ -19,8 +19,7 @@ export default async function Page({
         key={product[0].id}
       />
     );
-  } else {
-    // Manejar el caso en el que product no es un array o está vacío
-    return <div>No se encontró el producto</div>;
   }
+  // Manejar el caso en el que product no es un array o está vacío
+  return <div>No se encontró el producto</div>;
 }

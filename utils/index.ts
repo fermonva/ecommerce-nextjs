@@ -1,8 +1,8 @@
-import {
-  type CategoryData,
-  type Course,
-  type Posts,
-  type Product,
+import type {
+  CategoryData,
+  Course,
+  Posts,
+  Product,
 } from "@/types";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -30,11 +30,6 @@ const fetchData = async (url: string): Promise<any> => {
       method: "GET",
       headers: {
         Authorization: `Bearer ${API_TOKEN}`,
-        // body: JSON.stringify({
-        //   data: {
-        //     populate: "*",
-        //   },
-        // }),
       },
     });
 
@@ -78,10 +73,10 @@ export const getPosts = async (): Promise<Posts[]> => {
   }
 };
 
-export const getPost = async (url: string): Promise<Posts> => {
+export const getPost = async (url: string): Promise<Posts[]> => {
   try {
     const data = await fetchData(getPostUrl(url));
-    const result: Posts = data.data;
+    const result: Posts[] = data.data;
     return result;
   } catch (error: Error | any) {
     throw new Error(`Error in getPost: ${error.message}`);
